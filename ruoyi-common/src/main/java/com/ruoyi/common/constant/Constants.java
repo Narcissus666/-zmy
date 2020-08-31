@@ -51,11 +51,21 @@ public class Constants
      * 当前记录起始索引
      */
     public static final String PAGE_NUM = "pageNum";
+    
+    /**
+     * 当前记录起始索引默认值
+     */
+    public static final int PAGE_NUM_DEFAULT_VALUE = 1;
 
     /**
      * 每页显示记录数
      */
     public static final String PAGE_SIZE = "pageSize";
+    
+    /**
+     * 每页显示记录数默认值
+     */
+    public static final int PAGE_SIZE_DEFAULT_VALUE = 10;
 
     /**
      * 排序列

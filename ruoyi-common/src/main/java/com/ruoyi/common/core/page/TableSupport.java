@@ -16,8 +16,8 @@ public class TableSupport
     public static PageDomain getPageDomain()
     {
         PageDomain pageDomain = new PageDomain();
-        pageDomain.setPageNum(ServletUtils.getParameterToInt(Constants.PAGE_NUM));
-        pageDomain.setPageSize(ServletUtils.getParameterToInt(Constants.PAGE_SIZE));
+        pageDomain.setPageNum(ServletUtils.getParameterToInt(Constants.PAGE_NUM, Constants.PAGE_NUM_DEFAULT_VALUE));
+        pageDomain.setPageSize(ServletUtils.getParameterToInt(Constants.PAGE_SIZE, Constants.PAGE_SIZE_DEFAULT_VALUE));
         pageDomain.setOrderByColumn(ServletUtils.getParameter(Constants.ORDER_BY_COLUMN));
         pageDomain.setIsAsc(ServletUtils.getParameter(Constants.IS_ASC));
         return pageDomain;
